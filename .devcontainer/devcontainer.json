@@ -1,0 +1,18 @@
+{
+  "name": "CET4 Sprint (hello-world)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "forwardPorts": [
+    5174
+  ],
+  "portsAttributes": {
+    "5174": {
+      "label": "四级冲刺舱",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postStartCommand": "bash cet4-sprint/scripts/codespace-start.sh",
+  "hostRequirements": {
+    "cpus": 2
+  }
+}
